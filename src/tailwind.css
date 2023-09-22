@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1{
+    @apply font-NotoSans font-medium 
+  }
+  h2{
+    @apply font-NotoSans font-medium
+  }
+  h3{
+    @apply font-NotoSans font-medium
+  }
+  h4{
+    @apply font-NotoSans font-medium
+  }
+  h5{
+    @apply font-NotoSans font-medium
+  }
+  h6{
+    @apply font-NotoSans font-medium
+  }
+  a{
+    @apply font-NotoSans font-medium
+  }
+  button{
+    @apply font-NotoSans font-medium
+  }
+}
+
+
