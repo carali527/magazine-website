@@ -125,14 +125,6 @@ watch(() => y.value, () => {
                                 </svg>
                             </div>
                         </div>
-                        <!-- <div class="absolute z-10 border border-[#DDDDDD] border-solid rounded-l bg-white p-2 flex w-full hover:bg-blue">
-                            <div class="flex items-center justify-center mr-3">
-                                <svg class="w-2 h-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
-                                </svg>
-                            </div>
-                            <span>全部</span>
-                        </div> -->
                     </div>
                     <div :class="[
                         ['flex rounded-[20px] border-[#DDDDDD] relative'],
@@ -188,7 +180,7 @@ watch(() => y.value, () => {
             <div class="flex flex-col items-center justify-center lg:flex-col max-w-[410px]">
                 <div class="w-full mb-[20px]">
                     <ul class="flex">
-                        <li class="flex bg-grey-black/[.6] rounded-xl px-2 mr-[10px] text-sm">
+                        <li class="flex bg-grey-black/[.6] rounded-xl px-2 mr-[10px] text-sm cursor-pointer">
                             <div class="flex items-center justify-center">
                                 <svg class="w-[15px] h-[15px]" fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                     viewBox="0 0 24 24" xml:space="preserve">
@@ -198,13 +190,13 @@ watch(() => y.value, () => {
                             <span class="text-white m-auto">影音</span>
                         </li>
                         <li>
-                            <span class="text-[#B38E5B] text-sm mr-[10px]">#不分癌</span>
+                            <span class="text-[#B38E5B] text-sm mr-[10px] cursor-pointer">#不分癌</span>
                         </li>
                         <li>
-                            <span class="text-[#B38E5B] text-sm mr-[10px]">#常見治療問題</span>
+                            <span class="text-[#B38E5B] text-sm mr-[10px] cursor-pointer">#常見治療問題</span>
                         </li>
                         <li>
-                            <span class="text-[#B38E5B] text-sm">#常見問題</span>
+                            <span class="text-[#B38E5B] text-sm cursor-pointer">#常見問題</span>
                         </li>
                     </ul>
                 </div>
