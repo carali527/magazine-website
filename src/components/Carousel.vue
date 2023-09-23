@@ -12,7 +12,7 @@ function changeSlide(val:number){
 <template>
     <div class="relative my-10 w-[335px] lg:w-[730px] h-[200px] lg:h-[500px]">
         <div class="relative m-auto">
-            <div class="mySlides fade absolute flex items-center justify-center z-10 fix-safari-3D" v-for="(img, index) in imgs" :key="index" v-show="index === show">
+            <div class="absolute flex items-center justify-center z-10 fix-safari-3D" v-for="(img, index) in imgs" :key="index" v-show="index === show">
                 <img class="w-[327px] h-[184px] lg:w-[730px] lg:h-[480px] rounded-3xl z-10" :src="img">
             </div>
             <div>

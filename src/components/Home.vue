@@ -117,7 +117,7 @@ watch(() => y.value, () => {
                     (!hideLineBtn) && 'mr-2.5'
                 ]">
                     <div class="relative">
-                         <div class="mr-2.5 xl:min-w-[110px] focus-visible:outline-0 cursor-pointer flex lg:justify-between">
+                         <div class="mx-2.5 xl:min-w-[100px] focus-visible:outline-0 cursor-pointer flex justify-between w-28 lg:w-auto">
                             <span>全部</span>
                             <div class="flex items-center justify-center ml-1">
                                 <svg class="w-2 h-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
@@ -128,17 +128,22 @@ watch(() => y.value, () => {
                     </div>
                     <div :class="[
                         ['flex rounded-[20px] border-[#DDDDDD] relative'],
-                        (hideLineBtn) && 'w-[70vw]'
+                        (hideLineBtn) && 'w-[50vw] md:w-[30vw]'
                     ]">
                         <input type="text" :class="[
-                            ['border-solid border border-y-0 border-r-0 pl-2.5 focus-visible:outline-0 lg:hidden'],
+                            ['border-solid border border-y-0 border-r-0 pl-2.5 focus-visible:outline-0 w-28 lg:hidden'],
                             (!hideLineBtn) && 'flex',
                             (hideLineBtn) && 'hidden']"/>
                         <input type="text" :class="[
                             ['border-solid border border-y-0 border-r-0 pl-2.5 focus-visible:outline-0 lg:flex lg:w-[150px] xl:w-auto'],
                             (hideLineBtn) && 'flex',
                             (!hideLineBtn) && 'hidden']" placeholder="請輸入關鍵字"/>
-                        <button class="absolute right-0" @click="hideLineBtn = !hideLineBtn">
+                        <button class="absolute right-0 flex lg:hidden" @click="hideLineBtn = !hideLineBtn">
+                            <svg class="w-7 h-7 fill-[#DDDDDD]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+                                <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                            </svg>
+                        </button>
+                        <button class="absolute right-0 hidden lg:flex">
                             <svg class="w-7 h-7 fill-[#DDDDDD]" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
                                 <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
                             </svg>
