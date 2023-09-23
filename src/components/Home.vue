@@ -116,9 +116,24 @@ watch(() => y.value, () => {
                     (hideLineBtn) && 'mr-1',
                     (!hideLineBtn) && 'mr-2.5'
                 ]">
-                    <select class="mr-2.5 xl:min-w-[110px] focus-visible:outline-0 cursor-pointer">
-                        <option value="all">全部</option>
-                    </select>
+                    <div class="relative">
+                         <div class="mr-2.5 xl:min-w-[110px] focus-visible:outline-0 cursor-pointer flex lg:justify-between">
+                            <span>全部</span>
+                            <div class="flex items-center justify-center ml-1">
+                                <svg class="w-2 h-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- <div class="absolute z-10 border border-[#DDDDDD] border-solid rounded-l bg-white p-2 flex w-full hover:bg-blue">
+                            <div class="flex items-center justify-center mr-3">
+                                <svg class="w-2 h-2 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                                </svg>
+                            </div>
+                            <span>全部</span>
+                        </div> -->
+                    </div>
                     <div :class="[
                         ['flex rounded-[20px] border-[#DDDDDD] relative'],
                         (hideLineBtn) && 'w-[70vw]'

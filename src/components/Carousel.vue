@@ -12,10 +12,10 @@ function changeSlide(val:number){
 <template>
     <div class="relative my-10 w-[335px] lg:w-[730px] h-[200px] lg:h-[500px]">
         <div class="relative m-auto">
-            <div class="mySlides fade absolute flex items-center justify-center" v-for="(img, index) in imgs" :key="index" v-show="index === show">
+            <div class="mySlides fade absolute flex items-center justify-center z-10" v-for="(img, index) in imgs" :key="index" v-show="index === show">
                 <img class="w-[327px] h-[184px] lg:w-[730px] lg:h-[480px] rounded-3xl z-10" :src="img">
             </div>
-            <img class="absolute w-[335px] h-[184px] lg:w-[700px] lg:h-[480px] rounded-3xl carousel__bg--first lg:top-[5px] lg:right-[10px]" src="https://www.w3schools.com/howto/img_nature_wide.jpg">
+            <img class="absolute w-[335px] h-[184px] lg:w-[700px] lg:h-[480px] rounded-3xl carousel__bg--first lg:top-[5px] lg:right-[10px] z-5" src="https://www.w3schools.com/howto/img_nature_wide.jpg">
             <img class="absolute w-[400px] h-[170px] lg:w-[700px] lg:h-[400px] rounded-3xl carousel__bg--second mt-[30px] lg:mt-[20px] lg:ml-[20px] lg:right-[10px] lg:top-[30px]" src="https://www.w3schools.com/howto/img_nature_wide.jpg">
         </div>
         <a class="absolute left-[10px] top-[50%] z-11 translate-y-[-50%]" @click="changeSlide(show-1)">
@@ -39,7 +39,6 @@ function changeSlide(val:number){
 <style scoped>
     .carousel__bg--first {
         transform: perspective(1500px) rotateX(-45deg) scale(1);
-        z-index: 5;
     }
     .carousel__bg--second {
         transform: perspective(800px) rotateX(-45deg) scale(1);

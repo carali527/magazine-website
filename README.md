@@ -1,6 +1,5 @@
 # Intro
-This project using Vue 3, Typescript and TailwindCSS, it is only for the online coding test.
-
+This project using Vue 3, Typescript and TailwindCSS, it is only for the online coding test.  
 ## Project Setup
 
 ```sh

@@ -25,6 +25,7 @@ module.exports = {
             },
             zIndex: {
                 '11': '11',
+                '5': '5'
             },
             colors: {
                 'grey-black': '#222222',
